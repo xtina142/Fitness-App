@@ -1,0 +1,23 @@
+CREATE TABLE exercise_log (id INTEGER PRIMARY KEY, last_name TEXT, first_name TEXT, age INTEGER, activity TEXT, hrs_total_activity INTEGER);
+
+
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Stark' ,'Emily', 24, 'hiking', 4);
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Walker' , 'David', 29, 'biking', 8);
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Miller', 'Adam', 32, 'running', 3);
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Johnson', 'Amanda', 21, 'walking', 2);
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Reyes', 'Jasmine', 30, 'swimming', 6);
+INSERT INTO exercise_log (last_name, first_name, age, activity, hrs_total_activity) VALUES ('Hall', 'Anthony', 24, 'diving', 4);
+
+SELECT * FROM exercise_log;
+
+UPDATE exercise_log SET activity = 'rock_climbing' WHERE last_name = 'Reyes';
+
+SELECT * FROM exercise_log;
+
+UPDATE exercise_log SET hrs_total_activity = 10 WHERE first_name = 'David';
+
+SELECT * FROM exercise_log;
+
+DELETE FROM exercise_log WHERE last_name = 'Hall';
+
+SELECT * FROM exercise_log;
